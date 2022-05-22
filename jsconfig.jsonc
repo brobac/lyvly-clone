@@ -5,6 +5,7 @@
       "@core": ["./core"],
       "@components": ["./components"],
       "@containers": ["./containers"],
+      "@pages": ["./pages"],
       "@services": ["./services"],
       "@stores": ["./stores"],
       "@styles/*": ["./styles/*"],

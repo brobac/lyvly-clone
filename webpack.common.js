@@ -29,6 +29,7 @@ module.exports = {
       "@core": path.resolve(__dirname, "./client/core/"),
       "@components": path.resolve(__dirname, "./client/components/"),
       "@containers": path.resolve(__dirname, "./client/containers/"),
+      "@pages": path.resolve(__dirname, "./client/pages/"),
       "@services": path.resolve(__dirname, "./client/services/"),
       "@stores": path.resolve(__dirname, "./client/stores/"),
       "@styles": path.resolve(__dirname, "./client/styles/"),

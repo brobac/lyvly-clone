@@ -1,4 +1,6 @@
+import { TopBanner } from "./TopBanner";
+
 export const HomePage = () => {
   const app = document.querySelector("#app");
-  app.innerHTML = "hello world";
+  app.appendChild(TopBanner());
 };
