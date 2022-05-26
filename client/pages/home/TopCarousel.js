@@ -49,7 +49,6 @@ export const TopCarousel = (imgInfo) => {
       // container.style.transform = `translateX(-${container.clientWidth}px)`;
       container.style.transform = `translateX(-1280px)`;
     } else {
-      console.log(container.clientWidth);
       container.style.transform = `translateX(-${
         (index + 1) * container.clientWidth
       }px)`;
@@ -75,7 +74,6 @@ export const TopCarousel = (imgInfo) => {
   function handleNext() {
     items[selected].classList.remove("top-carousel-item--focused");
     selected += 1;
-    console.log(selected);
     setTransition("transform 0.4s ease");
     setTranslate({ index: selected });
     if (selected > items.length - 1) {
