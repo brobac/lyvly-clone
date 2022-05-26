@@ -1,0 +1,50 @@
+.top-carousel {
+  position: relative;
+  width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.top-carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-carousel-item {
+  border-radius: 2rem;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.top-carousel-item--focused {
+  height: 500px;
+}
+
+.top-carousel-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-carousel__prev-btn,
+.top-carousel__next-btn {
+  $btnSize: 55px;
+  position: absolute;
+  top: calc(50% - $btnSize/2);
+  width: $btnSize;
+  height: $btnSize;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.top-carousel__prev-btn {
+  left: -27px;
+  background-image: url("https://nhlyvly.com/web/img/pc/visual_prev.png");
+}
+
+.top-carousel__next-btn {
+  right: -27px;
+  background-image: url("https://nhlyvly.com/web/img/pc/visual_next.png");
+}

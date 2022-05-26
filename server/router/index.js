@@ -1,10 +1,11 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../../dist/index.html"));
+  res.sendFile(path.resolve(__dirname, "../../dist/home.html"));
 });
 
 router.get("/home", (req, res) => {

@@ -1,0 +1,98 @@
+.header-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header-top-contents {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.header__guide-btn {
+  margin-top: 1rem;
+}
+
+.header__logo-wrapper {
+  align-self: flex-end;
+}
+
+.member-menu {
+  display: flex;
+  margin-top: 21px;
+}
+
+.member-menu__item {
+  align-self: flex-start;
+  font-size: 13px;
+  color: #969696;
+  &:not(:first-child) {
+    padding-left: 1rem;
+  }
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header-nav__category-list {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 60px;
+}
+
+.header-nav__category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #161616;
+  transition: color 0.3s ease;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e70b2a;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover {
+    color: #e70b2a;
+    &:after {
+      opacity: 100;
+    }
+  }
+}
+
+.category-item--selected {
+  color: #e70b2a;
+  &:after {
+    opacity: 100;
+  }
+}
+
+.category-item--biz {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -16px;
+    z-index: -1;
+    height: 100px;
+    width: 136px;
+    height: 45px;
+    background-image: url("https://nhlyvly.com/web/img/pc/cate_biz_icon.png");
+  }
+}
